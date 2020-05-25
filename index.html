@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>Twist It</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="resources/CSS/reset.css">
+	<link rel="stylesheet" href="resources/CSS/styles.css">
+	<!-- Bootstrap link-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+	<header>
+		<div class=" jumbotron jumbotron-fluid">
+			<div class="container-fluid">
+				<div class="col-xs-12">
+					<h1>Twist It</h1>
+					<p>een memory spel</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class=buttons>
+			<button class="button button--full" href="#" id="btnInstructie">Instructies</button>
+			<button id="btnRandom" class="button"> Nieuw spel</button>
+		</div>	
+
+		<p><span class="steps"> Aantal clicks: 18</span></p>
+		<div class="custom">
+			<div id="pop1" class="hide-modal">
+				<h2 class="modal__title">Instructies</h2>
+				<h3> Hoe speel je?</h3>
+				<p>
+					Klik op een kaart om het instrument aan de andere kant te onthullen. Klik op een tweede kaart om te proberen een overeenkomst met de eerste te vinden. Als je slaagt, wordt het paar uit het spel verwijderd. Als dit niet het geval is, probeer je het gewoon opnieuw!
+					Opgepast, je mag maar 18 keer klikken.
+				</p>
+				
+				<h3> Hoe win je?</h3>
+				<p>Je wint wanneer je alle paren hebt gematched!</p>
+				<form id="instruction__form">
+					<p>
+						<input type="submit" id="btnOk" class="button" value="OK">
+					</p>
+				</form>
+
+			</div>
+		</div>
+
+
+
+		<div class="container">
+			<!-- Start of the first row -->
+			<div class="row">
+				<div class="col-xs-3 card" data-subject="djembe">
+					<div class="card-inner">
+						<div class="card-front">
+
+						</div>
+						<div class="card-back">
+							<img src="resources/images/djembe1.png">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-3 card" data-subject="piano">
+					<div class="card-inner">
+						<div class="card-front">
+
+						</div>
+						<div class="card-back">
+							<img src="resources/images/piano.png"> 
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-xs-3 card"  data-subject="gitaar">
+					<div class="card-inner">
+						<div class="card-front">
+						</div>
+
+						<div class="card-back">
+							<img src="resources/images/gitaar.png">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-3 card"  data-subject="ocarina">
+					<div class="card-inner">
+						<div class="card-front">
+						</div>
+						<div class="card-back">
+							<img src="resources/images/ocarina.png">
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- Start of the second row -->
+			<div class="row">		  
+				<div class="col-xs-3 card" data-subject="tamboerijn">
+					<div class="card-inner">
+						<div class="card-front">
+						</div>
+						<div class="card-back">
+							<img src="resources/images/tamboerijn.png">
+						</div>
+					</div>
+				</div>	
+
+				<div class="col-xs-3 card" data-subject="trommel">
+					<div class="card-inner">
+						<div class="card-front">
+						</div>
+						<div class="card-back">
+							<img src="resources/images/trommel.png"> 
+						</div>
+					</div>
+				</div>	
+
+				<div class="col-xs-3 card" data-subject="viool">
+					<div class="card-inner">
+						<div class="card-front">
+						</div>
+						<div class="card-back">
+							<img src="resources/images/viool.png">
+						</div>
+					</div>
+				</div>	
+
+
+				<div class="col-xs-3 card" data-subject="xylofoon">
+					<div class="card-inner">
+						<div class="card-front">
+						</div>
+						<div class="card-back">
+							<img src="resources/images/xylofoon.png">
+						</div>
+					</div>
+				</div>	
+			</div>
+
+
+			<!-- Start of the third row -->
+			<div class="row">		  
+				<div class="col-xs-3 card" data-subject="djembe">
+					<div class="card-inner">
+						<div class="card-front">
+						</div>
+						<div class="card-back">
+							<img src="resources/images/djembe1.png">	 
+						</div>
+					</div>
+				</div>	
+
+				<div class="col-xs-3 card" data-subject="piano">
+					<div class="card-inner">
+						<div class="card-front">
+						</div>
+						<div class="card-back">
+							<img src="resources/images/piano.png"> 
+						</div>
+					</div>
+				</div>	
+
+				<div class="col-xs-3 card" data-subject="gitaar">
+					<div class="card-inner">
+						<div class="card-front">
+						</div>
+						<div class="card-back">
+							<img src="resources/images/gitaar.png">
+						</div>
+					</div>
+				</div>	
+
+
+				<div class="col-xs-3 card" data-subject="ocarina">
+					<div class="card-inner">
+						<div class="card-front">
+						</div>
+						<div class="card-back">
+							<img src="resources/images/ocarina.png">
+						</div>
+					</div>
+				</div>	
+			</div>
+
+			<!-- Start of the fourth row -->
+			<div class="row">
+				<div class="col-xs-3 card" data-subject="tamboerijn">
+					<div class="card-inner">
+						<div class="card-front">
+
+						</div>
+						<div class="card-back">
+							<img src="resources/images/tamboerijn.png">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-3 card" data-subject="trommel">
+					<div class="card-inner">
+						<div class="card-front">
+
+						</div>
+						<div class="card-back">
+							<img src="resources/images/trommel.png"> 
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-xs-3 card" data-subject="viool">
+					<div class="card-inner">
+						<div class="card-front">
+						</div>
+
+						<div class="card-back">
+							<img src="resources/images/viool.png">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-3 card" data-subject="xylofoon">
+					<div class="card-inner">
+						<div class="card-front">
+						</div>
+						<div class="card-back">
+							<img src="resources/images/xylofoon.png">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="pop2" class="overlay">
+			<div id= "comeup">
+				<p>Helaas, je hebt verloren!</p>
+				<form>
+					<p>
+						<input type="submit" id="btnSpeel" class="button" value="Speel opnieuw">
+					</p>
+				</form>
+			</div>
+		</div>
+	</main>
+
+
+
+
+	
+
+	<footer>
+	</footer>
+
+	<script type="text/javascript" src="resources/js/twist-it.js"></script>
+</body>
+</html>

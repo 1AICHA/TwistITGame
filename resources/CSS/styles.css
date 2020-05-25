@@ -1,0 +1,203 @@
+/*general styles*/
+
+
+html, body, main  {
+	background-color: tomato;
+}
+
+main {
+	padding-top: 2rem;
+}
+
+
+header {
+	height: 7rem;
+}
+
+h1, p {
+	color: tomato;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h2, h3 {
+  color: tomato;
+}
+
+
+p span {
+  text-align: center;
+  display: block;
+  color: white;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+
+/*header*/
+
+.jumbotron.jumbotron-fluid{
+	padding-top: 1rem;
+	background-color: white;
+	padding: 0;
+	text-align: center;
+}
+
+.container-fluid {
+	padding-top: 1rem;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+}
+
+
+.button {
+  background-color: transparent;
+  cursor: pointer;
+  letter-spacing: .5px;
+  line-height: 2rem;
+  transition: .3s ease-out;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  margin: 0 1rem 0 1rem;
+  font-size: 1.5rem;
+}
+
+#btnOk {
+	color: white;
+	background-color: tomato;
+	margin: 0;
+}
+
+.custom{
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+
+#pop1 {
+	margin: 70px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  width: 85%;
+  position: absolute;
+  transition: all 5s ease-in-out;
+  z-index: 5;
+  top: -50px;
+}
+
+.modal__title {
+  color: black;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 1rem 0 2rem 0;
+}
+
+
+#pop1.hide-modal{
+  transform: translateY(-100%);
+}
+
+
+
+
+
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+#comeup {
+  padding: 4rem;
+  background: white;
+  border-radius: 0.3rem;
+  position: relative;
+  transition: all 5s ease-in-out;
+  height: 14rem;
+}
+
+.popup {
+  visibility: visible ;
+  opacity: 100;
+  position: fixed;
+  top: 8rem;
+}
+
+#btnSpeel {
+  color: white;
+  background-color: tomato;
+  margin: 0;
+}
+
+.card.match {
+	background-color: yellow;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	background-color: tomato;
+	z-index: 3;
+}
+
+
+.row{
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+	width: 15%;
+	cursor: pointer;
+	margin: 1px;
+	background-color: transparent;
+  perspective: 1000px;
+} 
+
+.card img {
+	width: 80%;
+}
+
+.card-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  margin: 0.25rem;
+}
+
+.card.flip .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-back, .card-front {
+  backface-visibility: hidden;
+}
+
+
+/* Style the back side */
+.card-back {
+  color: white;
+  transform: rotateY(180deg);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
